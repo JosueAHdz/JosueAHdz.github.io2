@@ -7,7 +7,7 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
     const time = document.getElementById('time').value;
 
     const message = `Hola, soy ${name}. Me gustaría agendar una cita para el ${date} a las ${time}.`;
-    const whatsappUrl = `https://wa.me/5535457150?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5545357150?text=${encodeURIComponent(message)}`;
 
     window.location.href = whatsappUrl;
 });
