@@ -8,11 +8,11 @@ body {
 }
 
 .appbar {
-    background: linear-gradient(80deg, #0066cc, #0099cc);
+    background: linear-gradient(80deg, #f7a8a8, #f8c0c0); /* Rosa crema más fuerte */
     color: #fff;
-    padding: 0.5rem 0; /* Ajustar el padding según sea necesario */
+    padding: 0.5rem 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -21,7 +21,7 @@ body {
 
 .appbar h1 {
     margin: 0;
-    font-size: 1.5rem; /* Ajustar el tamaño del título */
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #f8c0c0; /* Rosa crema más fuerte */
 }
 
 .container {
@@ -67,8 +67,8 @@ section:hover {
 }
 
 h2 {
-    color: #0066cc;
-    border-bottom: 2px solid #0066cc;
+    color: #f7a8a8; /* Rosa crema más fuerte */
+    border-bottom: 2px solid #f7a8a8; /* Rosa crema más fuerte */
     padding-bottom: 10px;
 }
 
@@ -80,7 +80,7 @@ h2 {
 .services-list li {
     display: flex;
     align-items: center;
-    background: #e0f7fa;
+    background: #fce6e6; /* Rosa crema claro */
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -88,14 +88,13 @@ h2 {
 }
 
 .services-list li:hover {
-    background: #b2ebf2;
+    background: #f7a8a8; /* Rosa crema más fuerte */
 }
 
 .services-list li i {
     margin-right: 10px;
     font-size: 1.5rem;
 }
-
 
 form {
     display: flex;
@@ -115,7 +114,7 @@ form input {
 
 form button {
     padding: 10px;
-    background: linear-gradient(90deg, #0066cc, #0099cc);
+    background: linear-gradient(90deg, #f7a8a8, #f8c0c0); /* Rosa crema más fuerte */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -125,7 +124,7 @@ form button {
 }
 
 form button:hover {
-    background: #005bb5;
+    background: #f58f8f; /* Rosa un poco más oscuro */
 }
 
 footer {
@@ -142,11 +141,11 @@ footer p {
 #medicamentos {
     background-color: #fff;
     padding: 50px 0;
-    text-align: center;
+
 }
 
 #medicamentos h2 {
-    color: #0066cc;
+    color: #f7a8a8; /* Rosa crema más fuerte */
 }
 
 #medicamentos p {
@@ -209,6 +208,19 @@ footer p {
     gap: 15px;
     justify-content: center;
     align-items: center;
+}
+
+#about .img {
+    text-align: center; /* Centrar la imagen en el contenedor */
+    margin: 1px 0; /* Espacio arriba y abajo de la imagen */
+}
+
+#about .img img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 300px; /* Ancho fijo para la imagen, ajustable según sea necesario */
+    border-radius: 50px; /* Bordes redondeados para un estilo más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .services-gallery img {
