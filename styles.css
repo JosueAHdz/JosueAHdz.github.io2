@@ -96,24 +96,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    max-width: 48%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
 
 form {
     display: flex;
@@ -209,11 +191,11 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    
     #map iframe {
         height: 300px;
     }
 }
+
 .services-list li img {
     max-width: 30px; /* Ajusta el ancho máximo de las imágenes */
     height: auto; /* Mantiene la proporción original */
@@ -221,4 +203,22 @@ footer p {
     vertical-align: middle; /* Alinea verticalmente con el texto */
 }
 
+.services-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
 
+.services-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.services-gallery img:hover {
+    transform: scale(1.05);
+}
